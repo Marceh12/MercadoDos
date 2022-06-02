@@ -1,0 +1,207 @@
+*{
+    box-sizing: content-box;
+}
+
+/*HEADER*/
+
+
+.main-header{
+    background-color:#EAC926 ;
+    padding: 20px;
+}
+
+.main-header-top{
+    margin-bottom: 20px;
+}
+
+.logo-header{
+    width: 220px;
+    margin-bottom: 15px;
+}
+
+.texto-top-header .fa-solid{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.texto-top-header{
+    display: flex;
+    justify-content: left;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.barra-busqueda{
+    width: 90%;
+    text-align: left;
+    margin: 1px ;
+    justify-content: center;
+}
+
+.main-header-logo-busq  .fa-solid {
+    background-color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 3px 4px;
+    margin-left: 0;
+    border: 1px solid rgb(90, 85, 85);
+    border-radius: 1px;
+    
+}
+
+
+
+.hamburguer-menu{
+    display: block;
+    max-width: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: azure;
+    background-color: #1259c3;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin: auto;
+}
+
+
+.barra-nav-main ul{
+    list-style: none;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.barra-nav-main a{
+    text-decoration: none;
+    color: #222;
+    display: inline-block;
+    padding: 2px;
+    font-size: 16px;
+    
+}
+
+.right-nav-bar{
+    display: none;
+}
+
+
+/*BODY*/
+
+.crear-form {
+    background-color: rgb(233, 233, 233);
+    padding: 20px;
+}
+
+.control-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+    align-items: center;
+}
+
+.control-form input{
+    width: 100%;
+}
+
+
+div input {
+    border: none;
+    padding: 8px;
+}
+
+.intereses-opciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button{
+    background-color: #1259c3;
+    opacity: 0.9;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    width: 25%;
+    padding: 10px;
+
+}
+
+
+
+@media(min-width: 361px){
+    .main-header-top{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    .main-header-logo-busq{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .barra-busqueda{
+        text-align: end;
+    }
+
+    .barra-busqueda input {
+        width: max-content;
+    }
+
+    .texto-top-header{
+        font-size: 22px;
+        font-weight: 600;
+        max-width: 450px;
+        justify-content: end;
+    }
+
+    .hamburguer-menu{
+        display: none;
+    }
+
+    .barra-nav-main{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .barra-nav-main ul{
+        display: flex;
+    }
+
+    .barra-nav-main li{
+        margin: 0 5px;
+    }
+
+    .barra-nav-main li a{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+}
+
+
+/*LOGIN*/
+
+.formulario-login{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.formulario-login .container-info {
+    margin: 15px 0;
+    padding: 10px;
+    border: 2px solid gainsboro;
+    border-radius: 3px;
+    text-align: center;
+
+}
+
+.button-login{
+    width: 95%;
+    border-radius: 3px;
+    
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="/css/form.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6c2885ab71.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top">
+            <div class="main-header-logo-busq">
+                <img src="/images/logo-mercado-liebre.svg" alt="logo" class="logo-header">
+                <div class= "barra-busqueda">
+                    <input  type="text" placeholder="Buscar productos, marcas">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <h2 class="texto-top-header">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                compra en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+
+        <nav class="barra-nav-main">
+            <ul class="left-nav-bar">
+                <li><a href="#"> Ofertas</a></li>            
+                <li><a href="#"> Tiendas Oficiales</a></li> 
+                <li><a href="#"> Vender</a> </li>
+                <li><a href="#"> Ayuda</a> </li>
+            </ul>
+            <ul class="right-nav-bar">
+                <li><a href="/register">
+                    Creá tu cuenta
+                    <i class="fa-solid fa-id-card"></i>
+                </a></li>
+                <li><a href="#">
+                    Ingresá
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                </a></li>
+                <li><a href="#">
+                    Mis compras
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </a></li>
+            </ul>
+        </nav>
+
+        
+        <a href="#" class="hamburguer-menu">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </header>
+
+    <form action="#" method="post" class="crear-form">  
+        
+                <div class="control-form">
+                    
+                    <input type="text" name="nombreApellido" id="" placeholder="Nombre y Apellido">
+                    
+                </div>
+                <div class="control-form">
+                    
+                    <input type="text" name="userName" id="" placeholder="Nombre de Usuario">
+                </div>
+                <h4>Fecha de Nacimiento</h4>
+                <div class="control-form">
+                    <input type="date" name="bday" id="">
+                </div>
+                <div class="control-form">
+                    <input type="text" name="address" id="" placeholder="Domicilio">
+                </div>
+                <div class="control-form-perfil">
+                <h4>Perfil</h4>
+                    <label>
+                        Comprador<input type="radio" name="perfil">
+                    </label>
+                    <label>
+                        Vendedor<input type="radio" name="perfil">
+                    </label>
+                    
+                </div>
+                <h4>Intereses</h4>
+                <div class="intereses-opciones">
+                    
+                    <label>Electro<input type="checkbox" name="electro" id=""></label>
+                    <label>Moda<input type="checkbox" name="moda" id=""></label>
+                    <label>Hogar<input type="checkbox" name="hogar" id=""></label>
+                    <label>Jugueteria<input type="checkbox" name="jugeteria" id=""></label>
+                    <label>Vida sana<input type="checkbox" name="vidaSana" id=""></label>
+                </div>
+                <h4>Foto Usuario</h4>
+                <div class="control-form">
+                    
+                    <input type="file" name="fotoUsuario">
+                </div>
+
+                <h4>Contraseña</h4>
+                <div class="control-form">
+                    
+                    <input type="password" name="pswrd">
+                </div>
+                <h4>Confirmar Contrasena</h4>
+                <div class="control-form">
+                    
+                    <input type="password" name="confirmPswrd">
+                </div>
+                
+                <button type="submit">Enviar</button> 
+                <button type="reset">Borrar</button>
+            </form>
+</body>
+</html>

@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
+    font-size: 12px;
+}
+h2{
+    font-size: 1rem;
+}
+h3{
+    font-size: 24px;
+}
+
+/* HEADER */
+
+.main-header{
+    background-color:#EAC926 ;
+    padding: 20px;
+}
+
+.main-header-top{
+    margin-bottom: 20px;
+}
+
+.logo-header{
+    width: 220px;
+    margin-bottom: 15px;
+}
+
+.texto-top-header .fa-solid{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.texto-top-header{
+    display: flex;
+    justify-content: left;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.barra-busqueda{
+    width: 90%;
+    text-align: left;
+    margin: 1px ;
+    justify-content: center;
+}
+
+.main-header-logo-busq  .fa-solid {
+    background-color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 3px 4px;
+    margin-left: 0;
+    border: 1px solid rgb(90, 85, 85);
+    border-radius: 1px;
+    
+}
+
+
+
+.hamburguer-menu{
+    display: block;
+    max-width: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: azure;
+    background-color: #1259c3;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin: auto;
+}
+
+
+.barra-nav-main ul{
+    list-style: none;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.barra-nav-main a{
+    text-decoration: none;
+    color: #222;
+    display: inline-block;
+    padding: 2px;
+    font-size: 16px;
+}
+
+.right-nav-bar{
+    display: none;
+}
+
+
+
+/*MAIN CONTENT*/
+
+main{
+    text-align: center;
+}
+
+article{
+    margin: auto;
+    
+    
+}
+
+article:hover{
+    box-shadow: 0px 5px 10px rgb(166, 161, 161)
+}
+
+.home-banner img{
+    width: 100%;
+    object-fit: cover;
+}
+
+main section{
+    width: auto;
+    border-color: #ebebeb;
+}
+
+main section img{
+    width: 10rem;
+    width: auto;
+} 
+
+main section article{
+    font-size: 16px;
+    
+    margin: 20px ;
+    border-radius: 5px;
+}
+
+main section article h4 {
+    display: none;
+    
+}
+
+.precio-main{
+    font-size: 18px;
+}
+
+.container-producto-datos{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    padding: 10px;
+    transition: 1s;
+        
+}
+
+
+main section article img{
+    width: 250px;
+    height:250px;
+    border-radius: 10px 10px 0 0 ;
+    object-fit: cover;
+    
+    position: relative;
+}
+
+main section article .fa-solid {
+    
+    color: rgb(52, 210, 63);
+    border: 1px solid rgb(52, 210, 63);
+    border-radius: 50%;
+    padding: 3% 2%;
+    transition: 0.5s;
+    position: relative;
+    bottom: 25px;
+    left: 185px;
+    z-index: 10;
+    
+}
+
+main section article .fa-solid:hover{
+    rotate: -90deg;
+}
+
+/*FOOTER*/
+
+footer section{
+    border-top: 2px solid #ebebeb;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+footer h4{
+    font-size: 16px;
+}
+
+footer section .fa-solid {
+    color: #1259c3;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+
+/*ADAPTABILIDAD*/
+
+
+@media(min-width: 361px){
+    .main-header-top{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    .main-header-logo-busq{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .barra-busqueda{
+        text-align: end;
+    }
+
+    .barra-busqueda input {
+        width: max-content;
+    }
+
+    .texto-top-header{
+        max-width: 350px;
+        justify-content: end;
+    }
+
+    .hamburguer-menu{
+        display: none;
+    }
+
+    .barra-nav-main{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .barra-nav-main ul{
+        display: flex;
+    }
+
+    .barra-nav-main li{
+        margin: 0 5px;
+    }
+
+    .barra-nav-main li a{
+        font-size: 17px;
+    }
+    
+    
+
+
+    
+    /*MAIN*/
+    
+    
+    section article {
+        border: 1px solid #cdc5c5;
+        border-radius: 5%;
+        width: 20%;
+        padding: 10px;
+        
+    }
+
+    main  {
+        width: auto;
+    }
+
+    main section article h4 {
+        display: flex;
+    }
+
+    .ultima-visita-diseño{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;    
+        
+    }
+
+    .seccion-ofertas-estilo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+}
+
+@media (min-width:769px){
+    .main-header-top, .barra-nav-main{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .logo-header{
+        width: 250px;
+    }
+
+    .texto-top-header{
+        max-width: none;
+        text-align: right;
+        font-size: 22px;
+    }    
+
+    .barra-nav-main{
+        margin-top: 30px;
+    }
+
+    .barra-nav-main li{
+            margin: 0 10px;
+    }
+
+    .barra-nav-main a{
+        font-size: 18px;
+}    
+    
+}
+
+/*FOOTER*/
+
+footer section {
+    display: flex;
+
+}
+
+footer section h4{
+    text-align: center;
+    padding: 5px;
+}
+
+footer div p {
+    font-weight: 600;
+    text-align: center;
+}
+
+footer div .copy-right{
+    padding: 15px;
+    text-align: center;
+}
