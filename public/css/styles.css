@@ -100,9 +100,15 @@ main{
     text-align: center;
 }
 
+main section h3{
+    color: #666666;
+    margin-bottom: 15px;
+}
+
 article{
     margin: auto;
-    
+    display: flex;
+    flex-direction: column;    
     
 }
 
@@ -120,10 +126,7 @@ main section{
     border-color: #ebebeb;
 }
 
-main section img{
-    width: 10rem;
-    width: auto;
-} 
+
 
 main section article{
     font-size: 16px;
@@ -153,8 +156,8 @@ main section article h4 {
 
 
 main section article img{
-    width: 250px;
-    height:250px;
+    width: 100%;
+    
     border-radius: 10px 10px 0 0 ;
     object-fit: cover;
     
@@ -181,10 +184,17 @@ main section article .fa-solid:hover{
 
 /*FOOTER*/
 
+footer{
+    background-color: #ebebeb;
+    
+}
+
 footer section{
     border-top: 2px solid #ebebeb;
     margin-top: 30px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 footer h4{
@@ -215,7 +225,7 @@ footer section .fa-solid {
     }
 
     .barra-busqueda{
-        text-align: end;
+        display: none;
     }
 
     .barra-busqueda input {
@@ -258,10 +268,12 @@ footer section .fa-solid {
     section article {
         border: 1px solid #cdc5c5;
         border-radius: 5%;
-        width: 20%;
+        width: 40%;
         padding: 10px;
         
     }
+
+
 
     main  {
         width: auto;
@@ -269,6 +281,12 @@ footer section .fa-solid {
 
     main section article h4 {
         display: flex;
+    }
+
+    main section h3{
+        text-align: left;
+        margin-left: 20px;
+
     }
 
     .ultima-visita-diseño{
@@ -284,6 +302,17 @@ footer section .fa-solid {
         justify-content: flex-start;
     }
 
+    main section article .fa-solid {
+    
+        color: rgb(52, 210, 63);
+        border: 1px solid rgb(52, 210, 63);
+        border-radius: 50%;
+        padding: 3% 2%;
+        transition: 0.5s;
+        position: relative;
+        
+        z-index: 10;
+        
 }
 
 @media (min-width:769px){
@@ -316,10 +345,34 @@ footer section .fa-solid {
     
 }
 
+
+section article {
+    border: 1px solid #cdc5c5;
+    border-radius: 5%;
+    width: 22%;
+    padding: 10px;
+    
+}
+
+main section article .fa-solid {
+    
+    color: rgb(52, 210, 63);
+    border: 1px solid rgb(52, 210, 63);
+    border-radius: 50%;
+    padding: 3% 2%;
+    transition: 0.5s;
+    position: relative;
+    left: 240px;
+    
+    z-index: 10;
+    
+}
+
 /*FOOTER*/
 
 footer section {
     display: flex;
+    flex-direction: row;
 
 }
 
@@ -336,4 +389,5 @@ footer div p {
 footer div .copy-right{
     padding: 15px;
     text-align: center;
+}
 }
